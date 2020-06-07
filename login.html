@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <!-- My Fontawesome CSS -->
+    <link rel="stylesheet" href="css/all.min.css">
+
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            height: 100%;
+        }
+
+        body {
+            background: url("https://images.unsplash.com/photo-1517586979036-b7d1e86b3345?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3334&q=80");
+        }
+
+        .container {
+            width: 450px;
+            height: 460px;
+            border-radius: 6%;
+            background-color: rgba(255, 255, 255, 0.5);
+            position: relative;
+            top: 50%;
+            transform: translate(0%, -50%);
+        }
+
+        .row {
+            width: 85%;
+        }
+
+        .form-check-input {
+            position: absolute;
+            top: 10%;
+            margin-top: .3rem;
+            margin-left: -1.25rem;
+        }
+
+        #icon {
+            background: rgba(33, 121, 230, 0.598);
+            border-radius: 50%;
+            text-align: center;
+            line-height: 120px;
+            font-size: 40pt;
+            width: 120px;
+            height: 120px;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container d-flex justify-content-center align-items-center">
+        <div class="row d-flex flex-column">
+            <div id="icon"><i class="far fa-user text-white "></i>
+            </div>
+            <h2 class="text-center" style="color: rgb(84, 84, 84);">Sign In</h2>
+            <div class="col my-2">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend ">
+                        <div class="input-group-text bg-white border-white"><i class="fas fa-user"></i></div>
+                    </div>
+                    <input type="text" class="form-control border-white" id="inlineFormInputGroup">
+                </div>
+            </div>
+            <div class="col my-2">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend ">
+                        <div class="input-group-text bg-white border-white"><i class="fas fa-lock"></i></div>
+                    </div>
+                    <input type="password" class="form-control border-white" id="inputPassword3">
+                </div>
+            </div>
+            <div class="col-auto my-2">
+                <div class="col-auto p-0">
+                    <button type="submit" class="btn btn-primary mb-2 btn-block">Login</button>
+                </div>
+                <div class="form-check mb-2">
+                    <input class="form-check-input align-middle" type="checkbox" id="autoSizingCheck">
+                    <label class="form-check-label text-white mr-5" for="autoSizingCheck">
+                        <small>Remember me</small>
+                    </label>
+                    <a href="#" class="text-white ml-4"><small>Forget Password?</small></a>
+                </div>
+            </div>
+        </div>
+
+
+        <script src="./js/jquery-3.5.1.min.js"></script>
+        <script src="./js/popper.min.js"></script>
+        <script src="./js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
